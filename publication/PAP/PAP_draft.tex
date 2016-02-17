@@ -1,0 +1,158 @@
+\documentclass[12pt]{article}
+
+\linespread{1.5}
+\setlength\parindent{1cm}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{hyperref}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\Large#1\end{center}
+    \vskip0.5em}%
+}
+
+
+\begin{document}
+
+\title{Evaluating the Impact of Community Development on Typhoon Resilience: Evidence from the Philippines}
+\subtitle{Pre-Analysis Plan}
+\author{Justin Abraham}
+\date{\today}
+\maketitle
+
+
+\section{Introduction}
+	
+	\paragraph{} The aim of this paper is to measure the effect of community driven development interventions on socioeconomic losses caused by natural disaster shocks. This study uses household and municipality level panel data on the KALAHI-CIDSS program in the Philippines combined with data on regional typhoon intensity to retrospectively estimate the effect of institutional reform on natural disaster reslience. The project employs a randomized evaluation strategy in the hopes that results could provide insight on the causal effect of more inclusive institutions on sensitivity to natural disasters and aggregate shocks in general.
+
+	This pre-analysis plan outlines the strategy for analyzing the impact of KALAHI-CIDSS on typhoon reslience. In accordance with best practices of research transparency, this document was compiled and registered after the collection of the endline survey data in 2010 and before conducting any analysis on intervention outcomes.
+
+
+\section{Overview of KALAHI-CIDSS}
+
+	\paragraph{} Initiated in January 2003, the Kapit-Bisig Laban sa Kahirapan – Comprehensive Integrated Delivery of Social Service (KALAHI) sought to strengthen community participation in barangay (village) governance and to develop local capacity to design, implement and manage development activities. The intervention targeted the 25 percent poorest municipalities in 42 of the poorest provinces and distributed approximately PHP 300,000 (USD 7,400) to each village to support local subprojects. The project funds flowed directly from the Philippine Department of Social Welfare and Development into community bank accounts to be used according to inclusive decision-making procedures.
+
+	KALAHI is consistent with community driven development practices. The intervention established a structured participatory process for communities to identify, prioritize, and implement local subprojects. In each participating municipality, the program is implemented according to a subproject cycle that involves the identification of village priorities, the establishment of a Municipal Inter Village Forum to select subprojects, and implementation by village volunteers. Throughout this process, community volunteers were wholly responsible for the procurement of subproject inputs and were required to contribute in-kind or cash to the subproject. This paper focuses on the period from 2003 to 2010, after which the intervention had been implemented in 184 municipalities. As of December 2010, KALAHI had supported 5,645 subprojects most of which involved the construction or improvement of roads, water systems, school buildings, health stations, and agricultural facilities. 
+	
+
+\section{Key Data Sources}
+	
+	\paragraph{} Researchers affiliated with the World Bank
+		\footnote{\url{http://microdata.worldbank.org/index.php/catalog/1542/study-description}}
+	and the Asia-Pacific Policy Center designed a rigorous impact evaluation to estimate the effects of KALAHI on poverty reduction, governance, and social capital. A survey team collected quantitative panel data throughout the project implementation in a sample of KALAHI treatment municipalities and from comparable control municipalities. The KALAHI surveys were fielded in Albay, Capiz, Zamboanga del Sur and Agusan del Sur provinces, selected to represent the major island groups of the Philippines. These provinces were part of Phase III of project expansion that launched in 2005. Treatment was assigned randomly to two out of the four municipalities in each province using the `tambiolo' process and respondents were chosen by multi-stage stratified random sampling. The quantitative sample includes 2,400 households in 135 villages in 16 municipalities in 4 provinces. The survey instrument includes information on household and village characteristics, proximity to health stations and schools, road usage, participation in local governance, labor force participation, health, education, and consumption. 
+
+	The quantitative baseline survey was carried out in September-October 2003, the quantitative midterm - in October-November 2006 and the quantitative endline survey - in February-March 2010, a little over a year after the end of the project activities. Between 2003 and 2006, the survey was fielded to the same 135 villages with a household attrition of 21 percent for the treatment and 22 percent for the control group. The sample size was reduced from 2,400 households during the baseline survey to a little less than 1,900 households during the endline survey, mostly due to migration and deaths. One of the original control municipalities in Albay (Malinao) ended up being included in the PODER project, a KALAHI-CIDSS type program supported by a Spanish aid agency. As a result, baseline data had to be collected in a replacement control municipality (Oas).
+
+	This paper will utilize the survey data from the World Bank with data on regional typhoon intensities to evaluate the impact of KALAHI on community disaster resilience. Information on typhoon exposure is generated by reconstructing tropical cyclone incidence using the Limited Information Cyclone Reconstruction and Integration for Climate and Economics (LICRICE) Model
+		\footnote{\url{http://www.pnas.org/content/107/35/15367.full.pdf+html?with-ds=yes}}.
+	The model reconstructs wind field histories for tropical cyclone events passing through the region using `limited information' from standard meteorological observations. Physical measures of typhoon exposure are aggregated and spatially averaged to obtain province-by-year and municipality-by-year observations from 1950 to 2013. 
+
+
+\section{Identification Strategy}
+	
+	\paragraph{}
+
+	A general framework for testing the effect of KALAHI on typhoon response is to regress the outcomes of interest on a treatment indicator, a measure of typhoon exposure, and controls for cross-sectional and time-dependent covariates using the following fixed effects model.
+
+	\[Y_{ijt} = \alpha K_{mpt} + \beta X_{mpt} + \gamma K_{mpt} X_{mpt} + u_{m} + v_{t} + \epsilon_{ijt}\]
+
+	$Y_{ijt}$ is the outcome of interest observed for a single individual in a specific year. For outcomes observed at the household level, the regressand is $Y_{jt}$. When $Y$ is an indicator, the regression fits a linear probability model. $K_{mpt}$ is a binary variable indicating whether a municipality underwent the first phase of the program at year $t$. $X_{mpt}$ is a province-specific measure of typhoon exposure by maximum wind speed. I will also regress on the storm's power dissipation density index as an alternative measure of storm intensity that captures the amount of energy released by a tropical cyclone. $u_{m}$ represents municipality level fixed effects and $v_{t}$ represents time period fixed effects. I will also examine models that include province level fixed effects $u_{p}$. $\epsilon_{ijt}$ is the idiosyncratic error term and is clustered by municipality-year.
+
+	% why is cameron telling me not to cluster by state-year? because there may be correlation across years (serial correlation)
+
+	The primary estimand is the coefficient $\gamma$ on the interaction term. The value of $\gamma$ should expose the differential impact of typhoon exposure that depends on treatment assignment. 
+
+	\[\frac{\partial Y}{\partial X} = \beta + \gamma K_{it}\]
+
+	\[\frac{\partial^2 Y}{\partial X \partial K} = \gamma\] 
+
+	In addition to contemporaneous typhoon incidence, a history of typhoon exposure may have an impact on the dependent variables. Similarly, a community's storm sensitivity may vary with the extent of subproject completion and maturity. To estimate these effects, the paper examines a finite distributed lag model over treatment assignment and typhoon exposure.
+
+	\[Y_{ijt} = \alpha_0 K_{mpt < 2} + 
+				\alpha_1 K_{mpt \geq 2} +
+				\sum_{\tau = 0}^{n} \left[\beta_{0\tau} X_{mpt - \tau} +
+									\beta_{1\tau} (X_{mpt - \tau} K_{mpt < 2}) + 
+									\beta_{2\tau} (X_{mpt - \tau} K_{mpt \geq 2}) \right] + 
+				u_{m} + 
+				v_{t} + 
+				\epsilon_{ijt}\]
+
+	In this model, I lag typhoon exposure with length $n$ determined by the Akaike information criterion. $\beta_{0\tau}$ represents the level effect of typhoon intensity experienced at year $t - \tau$. This specification includes two alternative treatment indicators that considers long term and short term treatment effects. $K_{mpt < 2}$ is a dummy indicating a municipality received treatment less than 2 years ago and $K_{mpt \geq 2}$ is a dummy indicating a municipality received treatment at least 2 years ago. I interact the $X_{mpt}$ lags with both treatment indicators to estimate the differential impact of typhoon shocks that depends on the extent of program maturity.
+
+	% need to find out when treatment began for phase 3 municipalities, i.e. which stage of phase 3 were they included in 
+
+
+\section{Hypotheses}
+
+	\paragraph{} This section presents the primary hypotheses and enumerates the outcomes of interest from the baseline and endline surveys by which they will be tested. The variables measure household outcomes from the panel survey unless otherwise noted. 
+
+	\paragraph{$H_A$: Participation in KALAHI mitigates negative welfare shocks due to typhoons}
+
+		\begin{enumerate}
+		\item Consumption in log per capita expenditures (PCEXP)
+		\item Consumption in log per capita expenditures for poor households (PCEXP)
+		\item Self-rated poverty (D132)
+		\item Food consumption in log per capita expenditures (PCFOOD)
+		\item Non-food consumption in log per capita expenditures (PCNONFOOD)
+		\item Non-food share of total consumption (PCFOOD, PCEXP)
+		\item Employment (individual level) (D56)
+		\item Crop farming, fishing, and raising livestock (D65, D75, D85)
+		\item Disease incidence (individual level) (C9, C10)
+		\end{enumerate}
+
+	\paragraph{$H_B$: Participation in KALAHI strengthens post-disaster access to public services}
+		
+		\begin{enumerate}
+		\item Access to potable water (C44i)
+		\item Access to electricity (C44ii)
+		\item Access to health services (C44iii)
+		\item Access to schools (C44iv)
+		\item School enrollment (individual level) (C20)
+		\item Log per capita expenditures on transportation (D114a)
+		\end{enumerate}
+
+	\paragraph{$H_C$: Gains in social capital due to KALAHI are robust to typhoon events}
+	
+	    \begin{enumerate}
+		\item Participation in a collective action activity (E142)
+		\item Willingness to contribute time/money to a public project (E147a, E147b)
+		\item Level of trust among community members (E153)
+		\item Trust in the local government (E154d)
+		\item Trust in the national government (E154e)
+		\item Attendance in Barangay Assemblies (E170)
+		\item Number of times attended a village assembly (E172a, E172b)
+		\item Intent to vote (E191)
+		\end{enumerate}
+
+
+
+% \section{Appendix}
+
+% \section{Notes}
+
+% 	economic and human losses due to natural disasters is well reported
+% 		some examples of long run and short run macro outcomes
+% 	damage is more acute in developing countries, suggesting it hampers development
+% 	why might this be so? income plays a part but theres a suspicion that institutions are also a determinant
+% 		better mobilize resources
+% 		AJR, CGM
+% 		Sen 1981 institutions can exacerbate or cause economic disasters
+% 	if institutions matter then governance reform could be an important ex ante adaptive measure
+% 	generalizable evidence on CDD impacts is lacking
+
+% 	H: This paper aims to measure the effect of CDD interventions on socioeconomic outcomes of typhoons
+% 	results might give us insight on the significance of `better' institutions on disaster shocks and maybe covariate shocks in general
+% 	focus on typhoons because common in developing countries (in truth because that's where I could scrape up usable data)
+% 	Philippines highest frequency of typhoon events
+% 	valuable because randomization nails down endogeneity: problem with studying institutions
+% 	valuable because household level focus supplements what we know on the macro level
+% 	thusfar no analysis on CDD natural disaster or shock outcomes
+%	we can use clustering with empirical variance covariance matrix because wee 
+
+
+\end{document}

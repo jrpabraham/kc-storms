@@ -1,0 +1,28 @@
+background and issue
+	economic and human losses due to natural disasters in developing countries is well reported
+	it is important to talk about ex ante disaster resilience 
+	there is background on the effect of aid and physical infrastructure on resilience
+	what is there about institutions?
+		better governance might mean better provision of public goods
+		it also might take strong centralized government to handle well
+
+research question and contribution of the paper
+	what effect does more inclusive institutions have on disaster preparedness
+	H: does CDD intervention have an effect on outcomes after a disaster?
+	causal channels: CDD >  > resilience
+	value in randomization to determine causal influence
+	looking at the issue through the household rather than aggregate level
+	there are no studies thusfar on CDD intervention of covariate shock
+	"let alone"
+
+description of the intervention
+	direct program outcomes and deliverables
+
+data
+	summary statistics
+	geographic distribution
+	
+empirical strategy
+	is there a structural form for this relationship?
+	reduced form regression specification
+	difference in difference

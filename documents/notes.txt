@@ -1,0 +1,38 @@
+developing theory
+
+distributed lag model
+	literature on long term impacts of typhoons
+	determining optimal lag length
+		AIC/BIC criteria*
+		4-5 years lag
+	how do we deal with collinearity (Almon distributed lag model)
+
+inconsistent standard errors and autocorrelation of outcomes
+	clustering SEs such that SEs are independent between groups
+	at what strata? Labonne uses municipal level clusters
+		at least in the muni level
+		barangay year level because hit at different time periods
+	collapsing into two period analysis
+	Labonne uses HH/mun FE
+	*just try it out
+
+analysis
+	discuss significant outcome variables
+	FIES data
+
+
+
+deadline for prize consideration in may 12, check emails
+how to code pov_self, trust levels
+how to replace missing
+how to merge completion date data
+
+inconsistent barangay coding
+taking the average, taking the max, taking the sum
+modeling 2009
+descriptive statistics:
+	compare outcomes by year (income, services, assembly)
+	compare storms by year
+	distribution of storms
+	distribution over treatment
+	distribution of project types

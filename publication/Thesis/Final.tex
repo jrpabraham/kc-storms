@@ -1,0 +1,331 @@
+\documentclass[12pt]{article}
+
+\linespread{1.5}
+\setlength\parindent{1cm}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{hyperref}
+
+\newcommand{\subtitle}[1]{%
+  \posttitle{%
+    \par\end{center}
+    \begin{center}\Large#1\end{center}
+    \vskip0.5em}%
+}
+
+\begin{document}
+
+\title{Evaluating the Impact of Community Development on Typhoon Resilience: Evidence from the Philippines}
+\author{Justin Abraham \\ Advisor: Solomon M. Hsiang \textsuperscript{1}}
+\date{\today}
+\maketitle
+
+\begin{abstract}
+	The overwhelming majority of natural disaster victims reside in developing countries, where the human and material losses due to disasters are exacerbated by geography, economic situation, and lack of appropriate policy interventions.  The aim of this paper is to analyze the effect of institutional quality on losses due to natural disasters. This study uses a household level panel survey from a community development program in the Philippines combined with data on regional typhoon intensity to retrospectively estimate the impact of institutional reform on natural disaster resilience. The project employs a randomized evaluation strategy to identify the causal effect of more inclusive institutions on sensitivity to natural disasters and aggregate shocks in general. I find that while exposure to more intense typhoon events negatively impacts economic activity, access to public services, and collective capacity, KALAHI-CIDSS does not significantly alter household storm resilience except on indicators of employment and participation in collective activities. 
+\end{abstract}
+
+\footnotetext[1]{I would like to thank my advisor, Solomon M. Hsiang, for contributing his work on reconstructed cyclone data and for his invaluable guidance in the writing of this thesis. I would also like to acknowledge Julien Labonne for aiding in the understanding and use of the KALAHI-CIDSS Living Condition Survey.}
+
+\newpage
+
+\section{Introduction}
+	
+	\paragraph{ } Poorer countries suffer disproportionately from natural disasters. Not only do developing countries face more frequent and more intense disaster incidence, but the material and human marginal costs associated with each event are more acute for those living in a development setting. The overwhelming majority of disaster victims reside in developing countries; 99 percent of the people affected by natural disasters over the period 1970-2008 were in the Asia-Pacific region, Latin America and the Caribbean, or Africa (Cavallo and Noy 2011). Some studies have attributed the differences of disaster impact to underinvestment in preventative and adaptive interventions due to fewer available resources. Indeed, the existence of specific rules and policies such as land-use planning, building codes, and engineering solutions are the exception in less developed countries (Freeman et al. 2003; Jamarillo 2009). 
+
+	However, another line of research provides evidence that differences in institutional quality play a significant role in determining the extent of disaster loss (Kahn 2005; Skidmore and Toya 2007; Raschky 2008; Strömberg 2007). Studies that have focused on the larger effect of institutional quality on development cite the importance of inclusion, accountability, and tranparency of political institutions in spurring economic growth (Engerman and Sokoloff 1997; Acemoglu, Johnson, and Robinson 2001; Banerjee and Iyer 2002). Institutional quality may be further linked with disaster resilience, the ability to withstand to natural disasters. On the national level, better institutions may translate to more effective disbursion of aid funds, quicker mobilization of emergency reponses, and a smoother uptake of adaptive policies. Better local institutions could empower communities to implement adaptive policies suited to local needs, include marginalized groups in disaster preparedness, and hasten the organization of post-disaster recovery (Arnold et al. 2014).
+
+	In an effort to better understand the link between local institutional quality and community response to natural disasters, this paper evaluates the impact of the Kapit-Bisig Laban sa Kahirapan - Comprehensive Integrated Delivery of Social Service (KALAHI-CIDSS), a community driven development intervention in the Philippines, on household sensitivity to tropical cyclones. This study utilizes a panel dataset of 2092 households collected from a randomized controlled trial of KALAHI-CIDSS combined with reconstructed data on regional tropical cyclone exposure to test three general hypotheses that represent different dimensions of cyclone risk. The array of outcome variables to be tested are similar to those tested in an earlier KALAHI-CIDSS impact evaluation (Labonne 2013). The paper uses a fixed effects model to obtain an unbiased average treatment effect of intensity of storm exposure, participation in KALAHI-CIDSS, and the interaction between the treatment and storm exposure, which is measured by maximum wind speed. 
+
+	\begin{center} \begin{flushleft}
+		$H_A$: Participation in KALAHI-CIDSS mitigates negative welfare shocks due to typhoons
+  		$H_B$: Participation in KALAHI-CIDSS strengthens post-disaster access to public services
+		$H_C$: Gains in collective capacity due to KALAHI-CIDSS are robust to typhoon events
+	\end{flushleft} \end{center}	
+	
+	Because multiple outcomes related to these hypotheses are available in the data, I submitted a pre-analysis plan as a safeguard against data mining and selective presentation of empirical results. The plan outlines the research question, a description of the data and variables to be used, the identification strategy, and the hypotheses. The pre-analysis plan was archived by the Registry for International Development Impact Evaluations\footnote{\url{http://ridie.3ieimpact.org/index.php?r=search/detailView&id=179}} on April 2014, before analyzing the key data sources.
+
+	Results show that more intense tropical cyclone events have an adverse effect on economic activity, access to public services, and collective capacity. In terms of economic activity and welfare, more extreme storm episodes are associated with lower per capita food expenditures, reduced agricultural activity, and higher likelihood of being sick. With respect to public services, access to water, electricity, health services, and schools suffer with greater storm exposure. Some measures of collective capacity have a significant negative correlation with storm intensity. Participation in a bayanihan community activity and levels of trust among community members suffer with greater cyclone exposure.
+	
+	Overall, this study finds no significant impacts of the KALAHI-CIDSS program to household and individual resilience to tropical cyclones. Out of the 20 outcomes tested, only two resulted in statistically significant estimates for the interaction between the intervention and storm intensity. The reduction in participation in bayanihan community activities due to tropical cyclones can be attenuated between 70-90 percent by KALAHI-CIDSS, suggesting an important role of community driven development in preserving collective capacity through aggregate shocks. The effect of cyclone exposure on employment is magnified by the intervention to a level approximately double than that of the impact of storms without the intervention.
+
+	This study extends previous research on institutional quality and natural disasters in three ways ways. First, the randomization of the treatment assignment can be interpreted as an exogenous shift in institutional quality, allowing the recovery of a causal effect of better institutions on disaster resilience. Second, the study examines household responses to tropical cyclones, complementing country level research and contributing to ongoing efforts to understand the impact of storms on a local level. Third, the study estimates the effect of tropical cyclone exposure on local collective capacity using a unique set of indicators regarding trust and civic participation. 
+
+	% Poor countries suffer disproportionately from natural disasters
+	% 	The Intergovernmental Panel on Climate Change reports that 65 percent of world deaths from natural disasters between 1985 and 1999 took place in nations whose incomes were below USD 760 per-capita (IPCC 2001).2
+	% 	Direct and indirect costs
+	% 	Lower incomes may mean that they just cannot afford to protect themselves (Cavallo and Noy)
+	% 	Intuitively, the way in which a society organizes itself against disaster shocks should be important as well fixing income
+
+	% Argument that institutional quality is a key determinant of economic performance (Engerman and Sokoloff 1997; Acemoglu, Johnson, and Robinson 2001; Banerjee and Iyer 2005)
+	% 	In the way that AJR describes focus on inclusion, accountability, and transparency
+	% 	Intuition and some evidence that it might also decreases vulnerability
+	% 		whereas resilience is the ability to withstand aggregate shocks like natural disasters
+	% 	Distinction: not just existence of certain policy measures but the nature of political participation and civic involvement
+	% 	getting at this notion of `social capital'
+	% 	Explain how this might be applied to natural disasters
+	% 		National: better channel aid funds, mobilize emergency response, facilitate adaptation (Hsiang)
+	% 		Local: bottom-up approaches better suited, diversification of activities, participatory scenario based planning for marg com
+
+	% 	World Bank:
+	% 		Support bottom-up approaches that make use of social networks and support autono- mous adaptation based on the lived experience of poor communities
+	% 		Support communities to increase diversity and fallback options (e.g., diversification of liveli- hoods into activities less sensitive to climate-related or other forms of risk, such as through voluntary migration)
+	% 		Enhance social learning and sound governance as a form of regulatory feedback (e.g., build- ing capacity in participatory approaches to scenario-based planning or measures to increase social accountability in the use of public finance for climate change response) (Hsiang adaptation)
+	% 		Understand the gender dimensions of climate change and empower women as resilience champions.
+
+	% Why is the research important?		
+	% 	CDDs that improve post-disaster response can represent a possible pre-disaster mitigation intervention on its own right
+
+	% The aim of this study is two-fold:
+	% *Do better institutions mitigate losses from natural disaster shocks?
+	% *Do CDD interventions strengthen resilience against natural disasters?
+
+	% Using KALAHI and LICRICE to look at the interaction between typhoon response and community driven development
+
+	% Hypotheses
+ %  		$H_A$: Participation in KALAHI mitigates negative welfare shocks due to typhoons
+ %  		$H_B$: Participation in KALAHI strengthens post-disaster access to public services
+	% 	$H_C$: Gains in social capital due to KALAHI are robust to typhoon events
+
+	% Pre-analysis plan
+	% 	why it is important
+	% 	what it involved
+
+	% What is the contribution to the literature?
+	% 	only randomization achieves causal identification
+	% 	one of the first studies to focus on the importance of local institutions against agg shocks
+
+	% Results and brief conclusion 
+
+% \section{Literature Review}
+
+% 	key definitions: CDD, social capital, aggregate shock, natural disasters as a human phenomenon
+
+% 	What is community driven development?
+% 	It is important to note that institutional quality as discussed here refers to the overall structure of political institutions and civic life as distinct from the existence of specific policy measures. 
+% 	getting at this notion of `social capital'
+
+% 	How have CDDs been used in developing communities?
+% 	Casey
+
+% 	What is the impact of CDD on communities?
+% 	Casey
+% 	Effects on welfare and social capital
+% 	Labonne
+
+% 	How do we characterize the effect of disasters on developing communities?
+% 		aggregate shock vs idiosyncratic shock
+% 		Particularly tropical cyclones in such areas (Cavallo and Noy)
+% 		mostly country level gdp 
+% 		micro Rodriguez-Oreggia et al. (2009) and Mechler (2009) 
+% 		Short term and long term costs (human and material) of natural disasters (Antilla,Hsiang, etc.)
+% 		we dont really understand, most are just macro studies
+
+% 	What is the relationship between institutions and disaster loss?
+% 		Hsiang adaptation
+% 		Kahn 2005; Skidmore and Toya 2007; Raschky 2008; Strömberg 2007), more
+% 		CDDs that improve post-disaster response can represent a possible pre-disaster mitigation intervention on its own right
+
+% 	What is the study opportunity?
+% 		rarity in exogenous variation in institutional structure
+% 		difficulty in measuring institutional quality
+% 		difficulty in measuring social capital
+
+% 	What is the contribution to the literature? think about this more
+% 		only randomization achieves causal identification
+% 		one of the first studies to focus on the importance of local institutions against agg shocks
+
+
+\section{Context and Intervention}
+
+	\subsection{Institutional reform and KALAHI-CIDSS}
+
+	\paragraph{ } Initiated in January 2003 by the Department of Social Welfare and Development, KALAHI-CIDSS followed the community driven development approach to strengthen community participation in village governance and to develop local capacity to design, implement and manage development activities. The intervention was developed to complement local poverty reduction efforts beginning with institutional reform in 1991 that shifted more responsibility to village administrative units, or barangays. KALAHI-CIDSS targeted the 25 percent poorest municipalities in 42 of the poorest provinces and distributed approximately USD 7,400 to each barangay in the municipality to support local subprojects. The government of the Philippines initially committed USD 82 million to the project, complemented by a USD 100 million loan from the World Bank. 
+
+	KALAHI-CIDSS is consistent with community driven development practices. In each participating municipality, barangays implemented the program according to a `Community Empowerment Actvity Cycle' that involved a social preparation stage and a project funding stage. Community memmbers in the social preparation stage had to proritize local needs and were trained to design and deliver subproject proposals. Additionally, an Area Coordination Team deployed by KALAHI-CIDSS worked with community facilitators to ensure adequate and meaningful participation. Representantives in the Municipal Inter-Barangay forum then selected which proposals would continue on to the funding stage using a set of criteria they themselves developed. Villagers elected the members of the subproject management committee which are responsible for subproject implementation and monitoring. Throughout this process, community volunteers were wholly responsible for the procurement of subproject inputs and were required to contribute in-kind or cash to the subproject. Each municipality repeated the cycle three times, so barangays could receive funding for up to three subprojects. While most barangays in participating municipalities complete the social preparation stage, only a few actually succeeded in getting their proposal funded. 
+
+	This paper focuses on the period from 2003 to 2010, after which the intervention had been implemented in 184 municipalities. As of December 2010, KALAHI had supported 5,645 subprojects most of which involved the construction or improvement of roads, water systems, school buildings, health stations, and agricultural facilities. The project is currently being expanded through a USD 120 million grant from the Millennium Challenge Corporation and a USD 59 million loan from the World Bank. Future implentations of KALAHI-CIDSS will focus on areas hit by tropical cyclone in order to strengthen ``access to services and infrastructure for communities in affected provinces and their participation in more inclusive local disaster risk reduction and management planning, budgeting, and implementation'' (Asian Development Bank).
+
+	%timeline of KALAHI-CIDSS rollout
+
+	\subsection{Tropical cyclones in the Philippines}
+
+	\paragraph{ } An average of ten typhoons of mild to severe intensity make landfall in the Philippines each year, making it one of the busiest regions in terms of cyclone activity in the world. The area of the Philippines is larger than the typical span of tropical cyclones, so different parts of the country can receive varying degrees of exposure in a given year.
+	The island groups of Luzon in the north and Visayas in the east are the most frequently impacted regions in the country. See Fig. 1 for a summary of geographic exposure to cyclones. At least 30 percent of the annual rainfall in these regions are traced to tropical cyclones, while the southern islands receive less than 10 percent of their annual rainfall from tropical cyclones (Rodgers et al.). Typhoon Haiyan recently made landfall in eastern Visaya in November 2013, attaining a 10-minute sustained maximum windspeed of 230 km/h that makes it one of the strongest tropical cyclones ever recorded. The typhoon cut a path through central Philippines, causing USD 809 million worth of damage and leaving behind a death toll of over 6,000.  
+
+
+	%why it's good for research
+
+	%fig - Storm intensity maps of the Philippines
+
+\section{Data}
+
+	\subsection{KALAHI-CIDSS Living Condition Survey}
+
+	\paragraph{ } The World Bank designed a rigorous impact evaluation to estimate the effects of KALAHI-CIDSS on poverty reduction, governance, and social capital (Labonne and Chase 2009; Labonne and Chase 2011; Labonne 2013). A survey team collected quantitative panel data over three rounds throughout the project implementation in a sample of KALAHI-CIDSS treatment municipalities and comparable control municipalities to compile the KALAHI-CIDSS Living Condition Survey. The survey was fielded in Albay, Capiz, Zamboanga del Sur and Agusan del Sur provinces, selected to represent the major island groups of the Philippines (see Fig. 2). These provinces were part of Phase III of project expansion that launched in 2005. Treatment was assigned randomly to two out of the four municipalities in each province using the `tambiolo' random process and household survey respondents from each barangay were chosen by multi-stage stratified random sampling. All in all, the quantitative sample includes 2,400 households in 135 barangays in 16 municipalities in 4 provinces. Labonne and Chase (2011) ran difference of means tests on each of the two study groups and reported that the treatment and comparison are well balanced across a host of covariates. See Table 1 and 2 for descriptive summaries for each group.  
+
+	The quantitative baseline survey was carried out in September-October 2003, the quantitative midterm - in October-November 2006 and the quantitative endline survey - in February-March 2010. Barangays in treatment municipalities entered the social preparation stage in October 2004, between the baseline and midline surveys. The endline survey collection ocurred a little over a year after the end of the project activities. Between 2003 and 2010, the survey was fielded to the same 135 villages with a household attrition of 21 percent for the treatment and 22 percent for the control group. The sample size was reduced from 2,400 households during the baseline survey to a little less than 1,900 households during the endline survey, mostly due to migration and deaths. One of the original control municipalities in Albay (Malinao) ended up being included in the PODER project, a KALAHI-CIDSS type program supported by a Spanish aid agency. As a result, baseline data had to be collected in a replacement control municipality (Oas). It is possible that if attrition among respondents varies with some outcome, then the estimate of the treatment effect on that outcome will be biased. To determine random attrition, Labonne (2013) runs a probit regression of the indicator for dropping out between 2003 and 2010 on the interaction of the outcome of interest with the treatment dummy, its interaction with the control dummy, the treatment dummy and a full set of province dummies. Nonsignificant coefficients reported in Table 3 for each of the outcomes suggest that attrition is unlikely to bias the primary estimates. 
+
+	While all barangays in the treatment completed the social preparation stage, only about a third of these received funding for at least one subproject as determined by the Municipal Inter-Barangay Forum. A barangay's ability to propose a successful project can be dependent on existing degrees of collective capacity, so it is an endogenous independent variable (Labonne and Chase 2011). Hence, this analysis takes October 2004, the beginning of the social preparation stage, as the treatment date for KALAHI-CIDSS to preserve exogeneity of the explanatory variable. We can then understand the coefficient estimate on the treatment to be the overall average treatment effect of the program rather than an effect due to social preparation or subproject completion alone. See Fig. 3-6 for the distribution of start and end dates of subproject implementation for each province. 
+
+ 	The survey instrument includes information on household and village characteristics, proximity to health stations and schools, road usage, participation in local governance, labor force participation, health, education, and consumption. Each variable to be analyzed from the Living Conditions Survey is categorized under one of the three hypotheses below. Outcomes are measured on the household level unless otherwise noted. Expenditure is observed in USD and is analyzed with a log transformation. Employment is observed as an indicator or whether an individual has had a job in the past six months. The interpretation for school enrollment and disease incidence is similar. The variable on agricultural activity indicates whether the household participated in crop farming, fishing, or raising livestock. Variables regarding access to public services indicates whether respondents believe they have better access than during the previous survey round. I include a variable indicating participation in a bayanihan, a type community activity, as one measure for collective capacity. Levels of trust are categorical variables represented by integers whose ordering is proportional to level of trust. 
+
+ 	\paragraph{$H_A$: Participation in KALAHI-CIDSS mitigates negative welfare shocks due to typhoons}
+
+		\begin{enumerate}
+		\item Consumption in log per capita expenditures (LNPCEXP)
+		\item Consumption in log per capita expenditures for poor households (LNPCEXP)
+		\item Food consumption in log per capita expenditures (LNPCFOOD)
+		\item Non-food consumption in log per capita expenditures (LNPCNONFOO)
+		\item Employment (individual level) (JOB)
+		\item Engaging in crop farming, fishing, or raising livestock (AGR)
+		\item Contracted a disease in the past 6 months (individual level) (SICK)
+		\end{enumerate}
+
+	\paragraph{$H_B$: Participation in KALAHI-CIDSS strengthens post-disaster access to public services}
+		
+		\begin{enumerate}
+		\item Better access to potable water (WATER)
+		\item Better access to electricity (ELECTR)
+		\item Better access to health services (HEALTH)
+		\item Better access to schools (SCHOOL)
+		\item Current school enrollment (individual level) (ENROLL)
+		\item Log per capita expenditures on transportation (LNTREXP)
+		\end{enumerate}
+
+	\paragraph{$H_C$: Gains in social capital due to KALAHI-CIDSS are robust to typhoon events}
+	
+	    \begin{enumerate}
+		\item Participation in a collective action activity (BAYANIHAN)
+		\item Willingness to contribute time/money to a public project (GIVE-TIME, GIVE-CASH)
+		\item Level of trust among community members (COM-TRUST)
+		\item Level of trust in the local government (LOC-TRUST)
+		\item Level of trust in the national government (NAT-TRUST)
+		\item Attendance in a Barangay Assembly in the past 6 months (ASSEMBLY)
+		\item Number of times attended a village assembly (ATTEND-F, ATTEND-M)
+		\item Intent to vote in upcoming elections (VOTE)
+		\end{enumerate}
+
+%map of provinces
+%schedule of Phase III program
+%table of probit attrition
+%distribution of subproject dates 
+%descriptive statistics
+%balance: descriptive statistics for each study group 
+		
+	\subsection{Limited Information Cyclone Reconstruction and Integration for Climate and Economics}
+
+	\paragraph{ } This paper will utilize the KALAHI-CIDSS Living Conditions Survey with data on regional typhoon intensities to evaluate the impact of KALAHI on community disaster resilience. Information on typhoon exposure is generated by reconstructing tropical cyclone incidence using the Limited Information Cyclone Reconstruction and Integration for Climate and Economics (LICRICE) Model (Hsiang 2010; Hsiang and Narita 2012; Anttila-Hughes and Hsiang 2013). The model reconstructs wind field histories for tropical cyclone events passing through the region using non-satellite meteorological observations from the International Best Track Archive for Climate Stewardship. This study uses the maximum wind speed (m/s) achieved by a tropical cylone in a given year as a measure of cyclone intensity. Maximum wind speeds are aggregated and spatially averaged to obtain province-by-year observations from 1950 to 2012. If a province experiences multiple cyclones, the reported observation is the maximum of the maximum speed achieve in each storm. 
+
+	Maximum wind speed is a suitable measure of cyclone intensity for the context of this study becuse physical capital in a storm may fail at some critical level of stress, rather than in proportion with storm exposure (Nordhaus 2010). The reporting of the maximum observation, however, leaves maximum wind speed unchanged if provinces experience multiple identical storms in the same year. Furthermore, LICRICE only reconstructs wind fields and does not explicitly account for rains, flooding, or storm surges, possibly understating the true damage wrought by tropical cyclones. Fig. 7-8 presents a time series plot of annual maximum wind speeds disaggregated by provinces in the randomized evaluation. 		
+
+\section{Identification}
+
+	\paragraph{ } A general framework for testing the effect of KALAHI on typhoon response that utilizes the panel structure of the data is to regress the outcomes of interest on a treatment indicator, a measure of typhoon exposure, and controls for cross-sectional and time-dependent covariates using the following fixed effects model.
+
+	\[Y_{ihmt} = \alpha K_{ihmt} + \beta X_{ihmt} + u_{m} + v_{t} + \epsilon_{ihmt}\]
+
+	$Y_{ihmt}$ is the outcome of interest observed for a single individual in a specific year. For outcomes observed at the household level, the regressand is $Y_{hmt}$. When $Y$ is an indicator, the regression fits a linear probability model. $K_{ihmt}$ is a binary variable indicating whether a municipality at year $t$ underwent the social preparation stage of the program. $X_{ihmt}$ is a province-specific measure of typhoon exposure by maximum wind speed. $u_{h}$ represents household level fixed effects and $v_{t}$ represents year fixed effects. I will also compare models that include a linear time trend instead of year fixed effects. $\epsilon_{ihmt}$ is the idiosyncratic error term.
+
+	A fixed effects model can control for unobserved heterogeneity among households that could possibly be correlated with the explanatory variables. Since treatment was randomly assigned, it is necessary only to discuss correlation with maximum wind speed $X_{ihmt}$. There is evidence that environmental disasters play some part in shaping migration patterns so propensity for mobility may be linked to previous exposure to tropical cyclones (Boustan et al. 2012; Drabo and Mbaye 2011; Gray and Mueller 2011). If characteristics determining mobility are time invariant, then the within transformation of the fixed effects model will remove that source of heterogeneity. 
+
+	A key identifying assumption in this empirical model is that without the program, the two groups of municipalities would have evolved similarly over time. If this parallel trends hypothesis holds, then it is possible to recover the average treatment effect on the treated despite not being able to directly observe the counterfactual (Bertrand et al. 2004). Labonne (2013) compares muncipalities in the study groups using the Family Income and Expenditure Survey from 2000 to 2003, just before the treatment began. They find no significant differences between the treatment and comparison municipalities, which provides some justification to accept parallel trends.
+
+	This fixed effects estimator will additionally estimate clustered standard errors to control for inter-cluster correlations of the error terms that could skew the resulting standard errors (Bertrand et al. 2003; Cameron and Miller 2013). Given that the program was implemented at the municipality level and that there could be intertemporal correlation, clustering by municipality seems ideal. Including a linear time trend and year fixed effects controls for overall correlation between different years, but not for province-specific correlation of errors.
+
+	To estimate the effect of the community driven development program on household response to tropical cyclones, I include an interaction term between yearly maximum wind speed and the treatment indicator. The primary estimand is the cross partial $\gamma$ coefficient on the interaction term. The value of $\gamma$ should expose the differential impact of typhoon exposure that depends on treatment assignment. If $\beta$ and $\gamma$ take on opposite signs, then participating in KALAHI-CIDSS mitigates the impact of typhoon exposure. On the other hand, if $\beta$ and $\gamma$ take on the same sign, then participating in KALAHI-CIDSS exacerbates the impact of typhoon exposure. 
+
+	\[Y_{ihmt} = \alpha K_{ihmt} + \beta X_{ihmt} + \gamma K_{ihmt} X_{ihmt} + u_{m} + v_{t} + \epsilon_{ihmt}\] 
+
+	\[\frac{\partial Y}{\partial X} = \beta + \gamma K_{it} \hspace{1 in} \frac{\partial^2 Y}{\partial X \partial K} = \gamma\] 
+
+	In addition to contemporaneous typhoon incidence, a history of typhoon exposure may have a lagged impact on the dependent variables. To estimate these effects, the paper examines a finite distributed lag model over treatment assignment and typhoon exposure. In this model, I lag typhoon exposure with length $l$ determined by the Akaike information criterion. $\beta_{0\tau}$ represents the level effect of typhoon intensity experienced at year $t - \tau$. 
+
+	\[Y_{ihmt} = \alpha K_{ihmt} +
+				\sum_{\tau = 0}^{l} \left[\beta_{0\tau} X_{ihmt - \tau} + 
+				\gamma_{0\tau} K_{ihmt} X_{ihmt - \tau} \right] + 
+				u_{h} + 
+				v_{t} + 
+				\epsilon_{ihmt}\]
+
+\section{Results and Discussion} 
+
+	\paragraph{ } Results for each outcome are presented by hypotheses in this section. This study focuses on the extended finite distributed lag model with a linear time trend and errors clustered at the municipality level (Column 6 of each regression table) as the primary regression specification but variants are presented for comparison. Note that this is the specification reported by Labonne (2013) in the previous KALAHI-CIDSS impact evaluation so it is possible to compare estimates as a check for robustness. Overall, I was unable to identify a significant relationship between the interaction of participation in KALAHI-CIDSS and tropical cyclone exposure and almost all outcome variables. However, I find evidence of a significant negative contemporaneous and lagged effect of cyclone intensity on economic activity and interestingly, indicators of social capital. Results show that KALAHI-CIDSS had a positive impact on economic activity, access to services, and measures of social capital, which are consistent with the findings in Labonne (2013).
+
+	% multicoll
+	% small amout of clusters
+	% province specific trends
+	% estimating lpm
+	% gender dynamics
+
+	% should have had more measures: income, health, spending patterns, vote, aid, housing
+
+	\subsection{Impact on welfare and economic activity}
+
+	\paragraph{ } This first hypothesis focuses on outcomes related to economic activity and human welfare. Treatment estimates for KALAHI-CIDSS are consistent with those found by Labonne (2013) and significant estimates for maximum windspeed vary with each outcome. Generally, I am unable to find evidence of a significant correlation between the interaction of KALAHI-CIDSS and cyclone intensity with all outcomes except for employment. 
+
+	Examining the estimates for total log per capita expenditures, year fixed effects and the linear year term were found to be significant at the 5 percent level and that including them in the fixed effects model increases $R^2$ from 0.36 to about 0.43. These results provide good evidence for accepting the regression specification estimating expenditures. The coefficient estimate of KALAHI-CIDSS on log per capita expenditures are nearly identical to Labonne (2013) at 0.113, but the inclusion of lagged maximum wind speed renders the effect insignificant. Examining log per capita expenditures for poor households, the coefficient on the intervention is significant at 0.151 with no significant correlation with maximum wind speed. Moreover, there is no significant correlation between the interaction and log per capita expenditures for either subsample. Focusing on log per capita expenditures is problematic because the relationship between cyclone exposure and overall expenditures is not intuitively obvious. For instance, more intense storms can boost spending on home repairs, but its effect can be attenuated by income losses. This suggests that it might be more informative to examine expenditure categories. 
+
+	Interpreting the relationship between log per capita food expenditures and storm exposure is more straightforward. It is reasonable to hypothesize that cyclones affect food spending mainly through purchasing ability. Just as in Labonne (2013), I find no significant effect of the intervention on log per capita food expenditures. A one unit increase in lagged maximum wind speed is significantly associated with a 1.5 percent reduction in food spending in Column 5 and a 0.7 percent reduction in Column 6. While there is no significant relationship with the interaction terms, the coefficient estimate on the one period lagged interaction is positive and is half the magnitude of the coefficient on lagged wind speed for both Column 5 and 6. While the estimate is noisy, this suggests that the intervention may attenuate shocks to food spending by about 50 percent.
+
+	In contrast, log per capita non-food expenditures encompasses a large range of spending categories and including cyclone exposure in the regression increases standard errors around the coefficient on the intervention. The coefficient on lagged wind speed is estimated to be 0.025 which could be driven by spending on repairs or medical services (Anttila-Hughes and Hsiang 2013). In order to find a clear relationship between spending and cyclone exposure it is necessary to examine more detailed information about spending categories. 
+
+	According to the results, the fixed effects estimates of employment, including the interaction term, are found to be statistically significant in almost all specifications. The regression in Column 6 predicts that individuals in the intervention at 9 percent more likely to be employed, significant at the 5 percent level. For both models in Column 5 and 6, the estimates on contemporaneous wind speed is significant at the 1 percent level and predicts a 1 percent increase in likelihood of employment associated with a one unit increase wind speed. It is possible to understand this correlation as a case of ``investment-producing destruction'' that increases demand for labor after the destruction of physical capital (Noy and Vu 2010). In the regression with year fixed effects, the estimates on lagged wind speed are negative and have values of approximately 1 percent. See Fig. 9 for a plot of the lag distribution. The primary estimator, the coefficient on the interaction terms, is statistically significant at the 5 percent level for the model with year fixed effects and at the 1 percent level for the model with the linear time trend. It is interesting to note that the sign on the interaction coefficients are the same as their corresponding coefficients on wind speed, suggesting that the intervention actually exaggerates the effects of cyclone exposure on likelihood of being employed. Furthermore, the size of the coefficients on wind speed and the size of the interaction coefficients are nearly one-to-one, suggesting that the intervention approximately doubles the effect of tropical cyclone intensity on employment.  
+
+	In terms of agricultural activity there is no significant relationship with the intervention or the interaction terms. However, both Column 5 and 6 specifications yield similar estimates at a statistically significant level. A one unit increase in one year lagged wind speed is associated with a 1 percent lower probability of fishing, farming, or raising livestock. This effect is halved at 0.4 percent for the two year lag. These estimates are statistically significant but interpretation of the linear probability model makes determining economic significance difficult.
+
+	Results show a significant relationship between lagged wind speed and whether an individual was sick within the past six months. These results are consistent with evidence of a delayed health burden in post-disaster scenarios (Anttila-Hughes and Hsiang 2013). I find no significant effect of the treatment or the interaction with this outcome. 
+
+
+	\subsection{Impact on post-disaster access to services}
+
+	\paragraph{ } This second hypothesis explores the effect of KALAHI-CIDSS and storm intensity on transportation consumption and access to public services like electricity, water, healthcare, and schooling. The results show no significant relationship between access to services and the interaction terms. The level effect of KALAHI-CIDSS is insignificant with regards to public services, which mirrors the results in Labonne (2013). Households exposed to higher wind speeds lagged at one year are less likely to believe they have better access to water, health services, and electricity than during the previous survey round. Notably, the impact of storm intensity on access to health services may have a role in exacerbating the health cost of tropical cyclones since likelihood of becoming sick also increases with storm intensity. 
+
+	As in Labonne (2013), individuals residing in treatment municipalities are less likely to be enrolled in school. This estimate predicts a 7 percent reduction in enrollment propensity at a significance level of 1 percent. Column 6 reports a coefficient of -0.0036 for lagged wind speed and 0.005 for contemporaneous wind speed, both significant at 5 percent. The positive effect on contemporaneous wind speed may be an artifact of the data. This study takes observations annually, but most of the typhoon activity in the Philppines occurs between July and October while the academic calendar for that year ends in March (Ribera et al. 2004). Recording enrollment near the end of the academic year means that the measure will likely be affected by storms from the previous year, which is what the estimates illustrate. Unsurprisingly, the estimates for access to school are similar to the enrollment indicator. The intervention has no significant effect and a one unit increase in lagged wind speed reduces by 1 percent the likelihood that respondents believe they have better access to schools. The interaction term is insignificant for both outcomes.
+
+	\subsection{Impact on social capital in disaster contexts}
+
+	\paragraph{ } The third hypothesis means to explore the relationship between exposure to tropical cyclones and levels of social capital or collective capacity within a community. Overall, there is no significant relationship between KALAHI-CIDSS and the robustness of social capital to tropical cyclone events except with respect to participation in a bayanihan. The level effects of the treatment are mixed among the different outcomes in accordance with results in Labonne (2013). Note that because responses to VOTE were only collected in the 2010 endline survey, it was impossible to examine with the current research design.
+
+	The results demonstrate no significant impact of the intervention on willingness to give time or money to a public project and participation in a bayanihan collective activity. In the specification with year fixed effects, there is a significant negative impact of storm intensity on participation in a bayanihan that diminishes with increasing lag distance. The coefficient estimate for the one year lag is -0.037 and -0.02 for the two year lag. These correspond to a 3.7 percent and a 2 percent decrease in the likelihood of participating in a bayanihan. See Fig. 10 for a plot of the lag distribution. In the same specifiction, the interaction of the treatment with the first two wind speed lags is positive significant at the 10 percent level, suggesting an attenuating effect of KALAHI-CIDSS on reductions in participation due to tropical cyclones. Calculating the ratio of the level effect over the interaction effect produces an attenuation rate of 70 percent for the one year lag and 90 percent for the two year lag. 
+
+	For outcomes measuring levels of trust, the interaction terms have no significant impact. Treatment is insignificant in determining levels of trust in the local and national government, but Column 6 and 5 report a significant coefficients of 0.199 and 0.275 on the treatment for level of trust among community members. In the specification with a linear time trend, one year lagged wind speed has a significant negative effect in community trust at -0.022, which is 10 percent of the magnitude of the coefficient on the intervention. The same estimate of -0.022 for lagged wind speed is produced for trust in local government. 
+
+	The coefficients on the interaction terms are insignificant for all measures of participation in Barangay Assemblies. The model predicts about a 0.10 increase in visits to assmebly meetings for males in treatment municipalities and about a 0.8 increase for females in treatment municipalities. There is no clear relationship between maximum wind speed and participation in assemblies.
+	
+\section{Conclusion}
+
+	\paragraph{ } Using a randomized evaluation design, this paper evaluates the impact of the KALAHI-CIDSS community driven development program on household resilience to tropical cyclones. While the intervention had a positive effect on economic activity, access to public services, and levels of social capital, it only impacts the typhoon response in 2 out of the 20 outcomes tested. Though its precise effect on multiple dimensions of social welfare remain unclear, the results demonstrate how insitutional quality may be an important determinant of household storm sensitivity. The intervention approximately doubles the effect of tropical cyclone intensity on employment. Focusing on social capital, the intervention mitigates the negative effects of typhoons on participation in collective activities by 70 to 90 percent. The study additionally finds significant negative effects of tropical cyclone intensity on nearly all outcomes studies, including social capital. This result suggests that current understanding of loss due to natural disasters may be incomplete without taking into consideration the effect of disasters on social dynamics. One policy implication is the opportunity for disaster interventions that conventionally focused on health and economic losses to now address post-disaster community relationships. 
+
+	From here there is an abundance of opportunity to further study the relationship between community driven development and natural disasters. The analysis conducted here is a general impact evaluation of KALAHI-CIDSS on multiple dimensions of household life. It is possible derive greater understanding of the causal effects of community driven developments by performing additional tests on each specific outcome of interest. This study analyzes the overall treatment effect of community driven development, but it could be fruitful to examine the long-term and short-term impact since the benefits of institutional reform may take varying durations to fully materialize. The evaluation design limited this analysis to the study of the social preparation component of KALAHI-CIDSS. Further investigation is required as to the difference in the treatment effect due to the social training and the treatment effect due to completion of a community subproject.  
+
+	
+% how many significant outcomes
+
+% 	multicollinearity with the finite distributed lag model
+% 		unstable estimates when doing robustness checks
+% 		either polynomial distributed lag or removing extra lagged regressors
+%  	reported one-way mun cluster
+% 	 	skew up SE estimates because few clusters
+% 	 	province specific time trends skew it down
+
+% 	how do we interpret these results
+% 	implications for policy
+% 	improvements
+% 		multicollinearity of lags
+% 		not enough clusters
+% 		within province variation of hurricanes is low
+% 	further investigations
+% 		long term short term impact of kalahi
+% 		distinguish between hardware and software effects
+% 		causal mechanisms
+		
+
+
+
+
+
+
+\end{document}

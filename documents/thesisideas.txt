@@ -1,0 +1,78 @@
+counterfeit drugs and the market for lemons
+	interventions: introducing authentic drugs, improving diagnostics, branding, rfid and misc. licensing, lemon laws
+	price effects: lower WTP due to lower expected quality, cost estimates to intervention 
+	quantity effects: demanded/supplied, is there an effect? implications for resistance/treatments
+	applicability of lemons to ACTs
+
+slum economics
+	mobility -jj
+	informal markets
+	sanitation interventions
+	property rights and effect on slum upgrading
+	public goods provision
+	what explains slum incidence? rapid rural-to-urban migration, poor planning, economic stagnation and depression, poverty, high unemployment, informal economy, colonialism and segregation, politics, natural disasters and social conflicts.
+	slum upgrading and clearing (Tondo!)
+	cataclysmic money
+	vulnerability to natural disasters
+	microfinance in slums
+
+black markets
+	marijuana interstate trade
+	the cost of marijuana prohibition	
+	marijuana quality control	
+	risk premium in marijuana production
+
+p2p and sharing
+
+economics of discrimination
+
+philippines intervention evaluation
+
+ROSCA
+
+remittance
+
+food security
+	food desserts in the US
+
+presence of army base
+
+land reform
+
+efficiency wages and union formation
+
+natural\environmental\weather\climate shocks
+	disaster mitigation: SMS warnings
+	how households mitigate/cope with environmental shocks
+	how env shocks disproportionately affect a community
+	Ligon and measuring vulnerability	
+
+	effect on long term socioeconomic indicators
+	effect of financial inclusion on vulnerability (since disasters are covariate)
+	how [property rights] affect willingness (ability) to pay for ex-ante disaster
+	microinsurance mitigation
+	effect of financial inclusion on post disaster recovery
+	look at the effect of a specific type of insurance device
+	if foreign aid creating moral hazard to underinvest in insurance?
+
+	measurement: slum severity index (Amit Patel)
+	how being in a slum affects post disaster recovery
+	how ... changes with say regularization of property rights (or big shocks in general)
+	how disasters affect likelihood of securing property rights in land tenure	
+	interact insurance with property rights
+	slum upgrading and resilience to weather shocks
+	slum upgrading and post-disaster recovery
+	natural disasters affecting slum incidence
+
+	effect of natural disasters on intergenerational mobility
+_____________________________
+
+natural disasters affecting slum incidence
+microinsurance 
+slum upgrading and resilience to weather shocks (facets of slum upgrading: property rights, infrastructure development, financial inclusion)*
+slum upgrading and post-disaster recovery (facets of slum upgrading)
+how disasters affect likelihood of securing property rights in land tenure
+
+relation to literature: climate shock we looked at was more idiosyncratic
+
+discussed last time. changed spoke with pascaline dupas and feasibility. propose. advising. how to get data?
